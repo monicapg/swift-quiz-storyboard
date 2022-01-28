@@ -13,6 +13,10 @@
 		606F6E2B278F514F007A505A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606F6E29278F514F007A505A /* Main.storyboard */; };
 		606F6E2D278F5151007A505A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 606F6E2C278F5151007A505A /* Assets.xcassets */; };
 		606F6E30278F5151007A505A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 606F6E2E278F5151007A505A /* LaunchScreen.storyboard */; };
+		606F6E3A278F9264007A505A /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F6E39278F9264007A505A /* QuizViewController.swift */; };
+		606F6E3D278F927E007A505A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F6E3C278F927E007A505A /* ResultViewController.swift */; };
+		606F6E44278F9A5F007A505A /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F6E43278F9A5F007A505A /* Quiz.swift */; };
+		606F6E47278F9A9C007A505A /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606F6E46278F9A9C007A505A /* QuizManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		606F6E2C278F5151007A505A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		606F6E2F278F5151007A505A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		606F6E31278F5151007A505A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		606F6E39278F9264007A505A /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		606F6E3C278F927E007A505A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		606F6E43278F9A5F007A505A /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		606F6E46278F9A9C007A505A /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				606F6E25278F514F007A505A /* SceneDelegate.swift */,
 				606F6E27278F514F007A505A /* ViewController.swift */,
 				606F6E29278F514F007A505A /* Main.storyboard */,
+				606F6E43278F9A5F007A505A /* Quiz.swift */,
+				606F6E46278F9A9C007A505A /* QuizManager.swift */,
+				606F6E39278F9264007A505A /* QuizViewController.swift */,
+				606F6E3C278F927E007A505A /* ResultViewController.swift */,
 				606F6E2C278F5151007A505A /* Assets.xcassets */,
 				606F6E2E278F5151007A505A /* LaunchScreen.storyboard */,
 				606F6E31278F5151007A505A /* Info.plist */,
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606F6E3D278F927E007A505A /* ResultViewController.swift in Sources */,
 				606F6E28278F514F007A505A /* ViewController.swift in Sources */,
+				606F6E44278F9A5F007A505A /* Quiz.swift in Sources */,
+				606F6E47278F9A9C007A505A /* QuizManager.swift in Sources */,
 				606F6E24278F514F007A505A /* AppDelegate.swift in Sources */,
 				606F6E26278F514F007A505A /* SceneDelegate.swift in Sources */,
+				606F6E3A278F9264007A505A /* QuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +311,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.monica.SwiftQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.monica.SwiftQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
